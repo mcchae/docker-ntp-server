@@ -12,4 +12,4 @@ COPY chrony.conf /var/lib/chrony/
 
 # ntp port
 EXPOSE 123/udp
-CMD ["chronyd.sh"]
+CMD ["/usr/bin/chronyd.sh"]
