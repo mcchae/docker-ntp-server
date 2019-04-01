@@ -2,8 +2,9 @@ version: '2'
 
 services:
   ntp:
-    #image: mcchae/ntp-server   # TODO: service problem
-    image: cturra/ntp
+    image: mcchae/ntp-server   
+    # TODO: service problem
+    #image: cturra/ntp
     container_name: ntp_server
     ports:
       - 123:123/udp
