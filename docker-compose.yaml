@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  ntp:
+    image: mcchae/ntp-server
+    container_name: ntp_server
+    ports:
+    - "123:123/udp"
+  ntptest:
+    image: mcchae/ntp-server
+    container_name: ntp_client
+    links:
+    - ntp
+    command: /bin/sleep 1000
+
