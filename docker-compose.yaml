@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   ntp:
-    image: mcchae/ntp-server   # TODO: 
-    #image: cturra/ntp
+    #image: mcchae/ntp-server   # TODO: invalid versice error
+    image: cturra/ntp
     container_name: ntp_server
     ports:
       - 123:123/udp
@@ -19,4 +19,4 @@ services:
       - ntp
     command: /bin/sleep 1000
     # apt update && apt install -y iputils-ping ntpdate
-    # ntpdate -q -o 2 -dv -p 1 -t 1 ntp
+    # ntpdate -q -o 2 -dv -p 2 -t 1 ntp
