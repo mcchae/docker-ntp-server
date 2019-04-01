@@ -8,6 +8,7 @@ RUN apk add --no-cache \
     vim \
 	tcpdump
 COPY chronyd.sh /usr/bin/
+RUN chmod +x /usr/bin/chronyd.sh
 COPY chrony.conf /var/lib/chrony/
 
 # ntp port
