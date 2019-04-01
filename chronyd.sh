@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 pidfile="/var/run/chronyd.pid"
 
