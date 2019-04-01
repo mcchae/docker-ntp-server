@@ -19,7 +19,8 @@ services:
     container_name: ntp_client
     links:
     - ntp
-    command: /bin/sleep 1000```
+    command: /bin/sleep 1000
+```
 
 * tftptest 는 테스트용 컨테이너
 
